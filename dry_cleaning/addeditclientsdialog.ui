@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AddEditClientsDialog</class>
+ <widget class="QDialog" name="AddEditClientsDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>500</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QDialog {
+  background-color: #b59683;
+}
+
+#frame {
+  border: 3px solid #d8d8c1;
+  border-radius: 15%;
+  background-color: #d8d8c1;
+}
+
+QLabel {
+	color: #b59683;
+}
+
+QLabel[objectName*=&quot;title&quot;] {
+  padding: 5px;
+
+  color: #ebebd8;
+  border-radius: 15%;
+  background-color: #b59683;
+  
+  margin-bottom: 20px;
+}
+
+QPushButton {
+	width: 90;
+	height: 20;
+	padding: 5px;
+
+	font: bold;
+
+	color: #b59683;
+	border: solid;
+	border-width: 5px;
+	border-radius:20px;
+	border-color: #b59683;
+	background-color: #ebebd8;
+}
+
+QPushButton::pressed {
+  	color: #ebebd8;
+  	background-color: #b59683;
+}
+
+QPushButton[objectName*=&quot;save&quot;]
+{
+  width: 90;
+  height: 20;
+  padding: 5px;
+
+  font: bold;
+
+  color: #ebebd8;
+  border: solid;
+  border-width: 5px;
+  border-radius:20px;
+  border-color: #284256;
+  background-color: #284256;
+}
+
+QPushButton[objectName*=&quot;save&quot;]::pressed {
+  color: #284256;
+  background-color: #ebebd8;
+}
+
+QLineEdit {
+	width: 200;
+	height: 20;
+	padding: 5px;
+
+	font: bold;
+
+	color: #284256;
+	border: solid;
+	border-width: 5px;
+	border-radius:20px;
+	border-color: #b59683;
+	background-color: #ebebd8;
+}
+
+QLineEdit::focus {
+	border-color: #284256;
+}
+
+QComboBox {
+  width: 90;
+	height: 20;
+	padding: 5px;
+
+	font: bold;
+
+	color: #b59683;
+	border: solid;
+	border-width: 5px;
+	border-radius:20px;
+	border-color: #b59683;
+	background-color: #ebebd8;
+}
+
+QComboBox:hover {
+
+}
+
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 15px;
+    border-left: 5px solid #b59683;
+}
+
+QComboBox::down-arrow {
+    
+}
+
+QComboBox QListView {
+	padding: 5;
+}
+
+QComboBox::selected {
+	color: #d8d8c1;
+	background-color: #284256;
+}
+
+QAbstractItemView {
+  border: 3px solid #b59683;
+  border-radius: 15%;
+  background-color: #ebebd8;
+}
+
+QAbstractItemView::selected {
+	color: #ebebd8;
+	background-color: #284256;
+}</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QFrame" name="frame">
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <widget class="QLabel" name="label_title">
+        <property name="baseSize">
+         <size>
+          <width>100</width>
+          <height>400</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>42</pointsize>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Додавання</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <widget class="QLineEdit" name="lineEdit_pib">
+          <property name="placeholderText">
+           <string>ПІБ клієнта</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer_2">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_3">
+        <item>
+         <widget class="QLineEdit" name="lineEdit_phoneNumber">
+          <property name="placeholderText">
+           <string>Номер телефону</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer_3">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_4">
+        <item>
+         <widget class="QLineEdit" name="lineEdit_emil">
+          <property name="placeholderText">
+           <string>Пошта</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer_4">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <spacer name="verticalSpacer">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <spacer name="horizontalSpacer">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton_cancel">
+          <property name="text">
+           <string>Скасувати</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton_save">
+          <property name="text">
+           <string>Зберегти</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

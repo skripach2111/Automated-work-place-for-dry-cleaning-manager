@@ -1,0 +1,201 @@
+QDialog {
+  height: 500px;
+  width: 400px;
+  background-color: #b59683;
+}
+
+#frame {
+  border: 3px solid #ebebd8;
+  border-radius: 15%;
+  background-color: #ebebd8;
+}
+
+QLabel {
+	color: #b59683;
+	font-weight: bold;
+}
+
+QLabel[objectName*="title"] {
+  padding: 5px;
+  
+  font-size: 42px;
+  font-weight: bold;
+
+  color: #eeeee4;
+  border-radius: 15%;
+  background-color: #b59683;
+  
+  margin-bottom: 10px;
+}
+
+QLabel[objectName*="image"] {
+  	min-height: 150px;
+  	min-width: 150px;
+  
+  	border: solid;
+	border-width: 3px;
+	border-radius:15%;
+	border-color: #b59683;
+
+	background-color: #eeeee4;
+}
+
+QPushButton {
+	width: 90;
+	height: 20;
+	padding: 5px;
+
+	font: bold;
+
+	color: #b59683;
+	border: solid;
+	border-width: 5px;
+	border-radius:20px;
+	border-color: #b59683;
+	background-color: #eeeee4;
+}
+
+QPushButton::pressed {
+  	color: #eeeee4;
+  	background-color: #b59683;
+}
+
+QPushButton[objectName*="save"], QPushButton[objectName*="upload"]
+{
+  width: 90;
+  height: 20;
+  padding: 5px;
+
+  font: bold;
+
+  color: #eeeee4;
+  border: solid;
+  border-width: 5px;
+  border-radius:20px;
+  border-color: #284256;
+  background-color: #284256;
+}
+
+QPushButton[objectName*="save"]::pressed, QPushButton[objectName*="upload"]::pressed {
+  color: #284256;
+  background-color: #eeeee4;
+}
+
+QLineEdit {
+	width: 200;
+	height: 20;
+	padding: 5px;
+
+	font: bold;
+
+	color: #284256;
+	border: solid;
+	border-width: 5px;
+	border-radius:20px;
+	border-color: #b59683;
+	background-color: #eeeee4;
+}
+
+QLineEdit::focus {
+	border-color: #284256;
+}
+
+QSpinBox, QDoubleSpinBox {
+    width: 200px; /* Добавляем единицу измерения (px) к значению ширины */
+    height: 20px;
+    padding: 5px;
+
+    font: bold;
+
+    color: #284256;
+    border: 5px solid #b59683; /* Устанавливаем толщину границы */
+    border-radius: 20px;
+    background-color: #eeeee4;
+}
+
+QSpinBox::focus, QDoubleSpinBox::focus {
+  border-color: #284256;
+}
+
+QDoubleSpinBox::up-button, QDoubleSpinBox::down-button, QSpinBox::up-button, QSpinBox::down-button {
+  width: 0;
+  height: 0;
+}
+
+QPlainTextEdit {
+	width: 200;
+	height: 100;
+	padding: 5px;
+
+	font: bold;
+
+	color: #284256;
+	border: solid;
+	border-width: 5px;
+	border-radius:20px;
+	border-color: #b59683;
+	background-color: #eeeee4;
+}
+
+QPlainTextEdit::focus {
+	border-color: #284256;
+}
+
+QComboBox {
+  width: 90;
+	height: 20;
+	padding: 5px;
+
+	font: bold;
+
+	color: #b59683;
+	border: solid;
+	border-width: 5px;
+	border-radius:20px;
+	border-color: #b59683;
+	background-color: #eeeee4;
+}
+
+QComboBox:hover {
+
+}
+
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 15px;
+    border-left: 5px solid #b59683;
+}
+
+QComboBox::down-arrow {
+    
+}
+
+QComboBox QListView {
+	padding: 5;
+}
+
+QComboBox::selected {
+	color: #ebebd8;
+	background-color: #284256;
+}
+
+QAbstractItemView {
+  border: 3px solid #b59683;
+  border-radius: 15%;
+  background-color: #eeeee4;
+}
+
+QAbstractItemView::selected {
+	color: #eeeee4;
+	background-color: #284256;
+}
+
+#frame_cost {
+  padding: 0px;
+  border: solid;
+	border-width: 3px;
+	border-radius:20px;
+	border-color: #b59683;
+	background-color: #eeeee4;
+}

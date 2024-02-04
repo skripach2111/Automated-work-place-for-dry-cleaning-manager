@@ -1,0 +1,138 @@
+QDialog {
+  background-color: #b59683;
+}
+
+#frame {
+  border: 3px solid #d8d8c1;
+  border-radius: 15%;
+  background-color: #d8d8c1;
+}
+
+QLabel {
+	color: #b59683;
+}
+
+QLabel[objectName*="title"] {
+  padding: 5px;
+
+  color: #d8d8c1;
+  border-radius: 15%;
+  background-color: #b59683;
+}
+
+QPushButton {
+	width: 90;
+	height: 20;
+	padding: 5px;
+
+	font: bold;
+
+	color: #b59683;
+	border: solid;
+	border-width: 5px;
+	border-radius:20px;
+	border-color: #b59683;
+	background-color: #d8d8c1;
+}
+
+QPushButton::pressed {
+  	color: #d8d8c1;
+  	background-color: #b59683;
+}
+
+QPushButton[objectName*="save"]
+{
+  width: 90;
+  height: 20;
+  padding: 5px;
+
+  font: bold;
+
+  color: #d8d8c1;
+  border: solid;
+  border-width: 5px;
+  border-radius:20px;
+  border-color: #284256;
+  background-color: #284256;
+}
+
+QPushButton[objectName*="save"]::pressed {
+  color: #284256;
+  background-color: #d8d8c1;
+}
+
+QLineEdit {
+	width: 200;
+	height: 20;
+	padding: 5px;
+
+	font: bold;
+
+	color: #b59683;
+	border: solid;
+	border-width: 5px;
+	border-radius:20px;
+	border-color: #b59683;
+	background-color: #d8d8c1;
+}
+
+QComboBox {
+  width: 90;
+	height: 20;
+	padding: 5px;
+
+	font: bold;
+
+	color: #b59683;
+	border: solid;
+	border-width: 5px;
+	border-radius:20px;
+	border-color: #b59683;
+	background-color: #d8d8c1;
+}
+
+QComboBox:hover {
+
+}
+
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 15px;
+    border-left: 5px solid #b59683;
+}
+
+QComboBox::down-arrow {
+    
+}
+
+QComboBox QListView {
+	padding: 5;
+}
+
+QComboBox::selected {
+	color: #d8d8c1;
+	background-color: #284256;
+}
+
+QComboBox QAbstractItemView {
+  border: 3px solid #b59683;
+  border-radius: 15%;
+  background-color: #d8d8c1;
+}
+
+QComboBox QAbstractItemView::selected {
+	color: #d8d8c1;
+	background-color: #284256;
+}
+
+QAbstractItemView {
+  border: 3px solid #b59683;
+  border-radius: 15%;
+  background-color: #bcb591;
+}
+
+QAbstractItemView::selected {
+	color: #bcb591;
+	background-color: #284256;
+}
